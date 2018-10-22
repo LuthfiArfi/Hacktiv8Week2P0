@@ -1,0 +1,80 @@
+SOAL 1 = Hukum Newton
+========================
+STORE "Force" without any value
+STORE "Mass" with 600
+STORE "Acceleration" with 2
+
+CALCULATE "Mass" times "Acceleration"
+SET "Force" value with calculation result
+
+DISPLAY "Force"
+
+
+SOAL 2 = Tahun kabisat
+=========================
+--------------
+algoritma
+--------------
+1. input "tahun" yang ingin di cek
+2. cek apakah "tahun" modulus 4 sama dengan 0 dan "tahun" modulus 100 tidak sama dengan 0. jika iya, tampilkan "tahun" adalah tahun kabisat. jika tidak lanjut ke langkah 3.
+3. cek apakah "tahun" modulus 4 sama dengan 0 dan "tahun" modulus 100 sama dengan 0 dan "tahun" modulus 400 sama dengan 0. jika iya, tampilkan "tahun" adalah tahun kabisat. jika tidak lanjut ke langkah 4.
+4. "tahun" bukan merupakan tahun kabisat
+
+++++++++++++++
+PSEUDOCODE
+++++++++++++++
+STORE "tahun" without any value
+
+IF ("tahun" mod 4 equals 0) and ("tahun" mod 100 not equals 0)
+  DISPLAY ("tahun" adalah tahun kabisat)
+ELSE IF ("tahun" mod 4 equals 0) and ("tahun" mod 100 equals 0) and ("tahun" mod 400 equals 0)
+  DISPLAY ("tahun" adalah tahun kabisat)
+ELSE
+  DISPLAY ("tahun" bukan tahun kabisat)
+
+
+SOAL 3 = Laundry Day
+=========================
+--------------
+algoritma
+--------------
+1. input jumlah cucian foxie yang ada di "keranjang" sebanyak 20 buah.
+2. cek apakah jumlah cucian foxie yang ada di "keranjang" sama dengan 0. Jika tidak, maka lanjutkan ke step 3. Jika ya, maka lanjutkan ke step 4.
+3. cucian "keranjang" dikurang 1. cucian "mesincuci" ditambah 1. kembali ke step 2.
+4. display jumlah cucian di "mesincuci".
+
+++++++++++++++
+PSEUDOCODE
+++++++++++++++
+STORE "keranjang" with 20
+STORE "mesincuci" without any value
+
+WHILE "Keranjang" less than and equals 0
+  DO "Keranjang" subtracted by 1, "mesincuci" added by 1
+END_WHILE
+DISPLAY (jumlah cucian adalah sebanyak "mesincuci")
+
+
+SOAL 4 = Periksa Kuku
+===========================
+-----------------
+algoritma
+-----------------
+1. input jumlah "siswa" sebanyak 40 siswa.
+2. buat array random boolean sebanyak "siswa" dengan nilai "true" untuk berkuku panjang dan "false" untuk berkuku pendek dengan "i" sebagai nomor absen siswa.
+3. cek semua "siswa" dimulai dari siswa ke-1 sampai dengan siswa ke-40. jika belum mencapai 40, maka lanjutkan ke step 4, jika sudah mencapai siswa ke-40 maka hentikan pemeriksaan kuku.
+4. cek siswa ke-"i". jika "true" maka "guru menghukum murid ke-"i". jika "false" maka guru memuji murid ke-"i".
+
+++++++++++++++
+PSEUDOCODE
+++++++++++++++
+STORE RANDOM ARRAY "siswa" with 40 data of true and false
+STORE "i" as "siswa" array order
+
+FOR (start from "i" number 1 to "i" number 40, "i" number added by 1 after iteration done)
+  DO
+    IF "siswa" number "i" equals true
+      DISPLAY (siswa "i" dihukum guru. LMAO! sad!)
+    ELSE
+      DISPLAY (siswa "i" dipuji guru. Good Kiddo!)
+END_FOR
